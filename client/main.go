@@ -3,10 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
+	"kie-grpc-client/kie/kie"
 	"strings"
 	"time"
 
-	kie "kie-grpc-client/kie"
+	//kie "kie-grpc-client/kie"
 
 	"google.golang.org/grpc"
 )
@@ -32,8 +33,8 @@ func CallDMN() {
 
 	input := kie.DinnerInput{
 		GuestsWithChildren: true,
-		Season:             "Fall",
-		NumberOfGuests:     4,
+		Season:             "Spring",
+		NumberOfGuests:     5,
 		Temp:               25,
 		RainProbability:    30}
 
